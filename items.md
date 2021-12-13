@@ -757,32 +757,32 @@
 ### Alarm Table
 
 
-| Item | Type |
-| ---- | ---- |
-| Alarm&#x2011;Send&#x2011;Trap | bool |
-| Alarm&#x2011;Severity | (0)&#160;Disabled</br>(1)&#160;Critical</br>(2)&#160;Major</br>(3)&#160;Minor</br>(4)&#160;Warning</br>(5)&#160;Control |
-| Alarm&#x2011;DO&#x2011;Mapping&#x2011;A | (0)&#160;None</br>(1)&#160;Digital&#160;Output&#160;1</br>(2)&#160;Digital&#160;Output&#160;2</br>(3)&#160;Digital&#160;Output&#160;3</br>(4)&#160;Digital&#160;Output&#160;4</br>(5)&#160;Digital&#160;Output&#160;5</br>(6)&#160;Digital&#160;Output&#160;6</br>(7)&#160;Digital&#160;Output&#160;7</br>(8)&#160;Digital&#160;Output&#160;8</br>(9)&#160;Digital&#160;Output&#160;9</br>(10)&#160;Digital&#160;Output&#160;10</br>(11)&#160;Digital&#160;Output&#160;11</br>(12)&#160;Digital&#160;Output&#160;12</br>(13)&#160;Digital&#160;Output&#160;13</br>(14)&#160;Digital&#160;Output&#160;14</br>(15)&#160;Digital&#160;Output&#160;15</br>(16)&#160;Digital&#160;Output&#160;16</br>(17)&#160;Digital&#160;Output&#160;17</br>(18)&#160;Digital&#160;Output&#160;18</br>(19)&#160;Digital&#160;Output&#160;19</br>(20)&#160;Digital&#160;Output&#160;20</br>(21)&#160;Digital&#160;Output&#160;21</br>(22)&#160;Digital&#160;Output&#160;22</br>(23)&#160;Digital&#160;Output&#160;23</br>(24)&#160;Digital&#160;Output&#160;24</br>(25)&#160;Digital&#160;Output&#160;25</br>(26)&#160;Digital&#160;Output&#160;26</br>(27)&#160;Digital&#160;Output&#160;27</br>(28)&#160;Digital&#160;Output&#160;28</br>(29)&#160;Digital&#160;Output&#160;29</br>(30)&#160;Digital&#160;Output&#160;30</br>(31)&#160;Digital&#160;Output&#160;31</br>(32)&#160;Digital&#160;Output&#160;32 |
-| Alarm&#x2011;DO&#x2011;Mapping&#x2011;B | (0)&#160;None</br>(1)&#160;Digital&#160;Output&#160;1</br>(2)&#160;Digital&#160;Output&#160;2</br>(3)&#160;Digital&#160;Output&#160;3</br>(4)&#160;Digital&#160;Output&#160;4</br>(5)&#160;Digital&#160;Output&#160;5</br>(6)&#160;Digital&#160;Output&#160;6</br>(7)&#160;Digital&#160;Output&#160;7</br>(8)&#160;Digital&#160;Output&#160;8</br>(9)&#160;Digital&#160;Output&#160;9</br>(10)&#160;Digital&#160;Output&#160;10</br>(11)&#160;Digital&#160;Output&#160;11</br>(12)&#160;Digital&#160;Output&#160;12</br>(13)&#160;Digital&#160;Output&#160;13</br>(14)&#160;Digital&#160;Output&#160;14</br>(15)&#160;Digital&#160;Output&#160;15</br>(16)&#160;Digital&#160;Output&#160;16</br>(17)&#160;Digital&#160;Output&#160;17</br>(18)&#160;Digital&#160;Output&#160;18</br>(19)&#160;Digital&#160;Output&#160;19</br>(20)&#160;Digital&#160;Output&#160;20</br>(21)&#160;Digital&#160;Output&#160;21</br>(22)&#160;Digital&#160;Output&#160;22</br>(23)&#160;Digital&#160;Output&#160;23</br>(24)&#160;Digital&#160;Output&#160;24</br>(25)&#160;Digital&#160;Output&#160;25</br>(26)&#160;Digital&#160;Output&#160;26</br>(27)&#160;Digital&#160;Output&#160;27</br>(28)&#160;Digital&#160;Output&#160;28</br>(29)&#160;Digital&#160;Output&#160;29</br>(30)&#160;Digital&#160;Output&#160;30</br>(31)&#160;Digital&#160;Output&#160;31</br>(32)&#160;Digital&#160;Output&#160;32 |
-| Alarm&#x2011;Notes | str |
-| Alarm&#x2011;Name | str |
-| Alarm&#x2011;State | (0)&#160;Not&#160;Active</br>(1)&#160;Active&#160;Warning</br>(2)&#160;Active&#160;Major</br>(3)&#160;Active&#160;Minor</br>(4)&#160;Reserved</br>(5)&#160;Active&#160;Critical</br>(6)&#160;Active&#160;Control |
-| Alarm&#x2011;State&#x2011;Change&#x2011;Time | int (datetime) |
-| Low&#x2011;Float&#x2011;Threshold | Float |
-| Enable&#x2011;Low&#x2011;Float&#x2011;Tracking | (0)&#160;Disabled</br>(1)&#160;Enabled |
-| High&#x2011;Float&#x2011;Threshold | Float |
-| Enable&#x2011;High&#x2011;Float&#x2011;Tracking | (0)&#160;Disabled</br>(1)&#160;Enabled |
-| High&#x2011;Load&#x2011;Threshold | Float |
-| AC&#x2011;Fail&#x2011;Recognition&#x2011;Period | int (TimeIntervalInSeconds) |
-| System&#x2011;Overload&#x2011;Threshold | int (Unsigned8) |
-| System&#x2011;Overload&#x2011;Recognition&#x2011;Period | int (TimeIntervalInMinutes) |
-| System&#x2011;Overload&#x2011;Type | (0)&#160;Total&#160;Capacity</br>(1)&#160;Redundancy |
-| Battery&#x2011;Temperature&#x2011;High&#x2011;Threshold | Signed8 |
-| Battery&#x2011;Temperature&#x2011;Low&#x2011;Threshold | Signed8 |
-| Nominal&#x2011;AC&#x2011;Voltage | Float |
-| AC&#x2011;Phase&#x2011;Fail&#x2011;Threshold | int (Unsigned8) |
-| AC&#x2011;Phase&#x2011;Voltage&#x2011;Threshold | int (Unsigned8) |
-| Nominal&#x2011;AC&#x2011;Frequency | Float |
-| AC&#x2011;Frequency&#x2011;Threshold | int (Unsigned8) |
+| Item | Index | Type |
+| ---- | ----- | -----|
+| Alarm&#x2011;Send&#x2011;Trap | 0-59 | bool |
+| Alarm&#x2011;Severity | 0-59 | (0)&#160;Disabled</br>(1)&#160;Critical</br>(2)&#160;Major</br>(3)&#160;Minor</br>(4)&#160;Warning</br>(5)&#160;Control |
+| Alarm&#x2011;DO&#x2011;Mapping&#x2011;A | 0-59 | (0)&#160;None</br>(1)&#160;Digital&#160;Output&#160;1</br>(2)&#160;Digital&#160;Output&#160;2</br>(3)&#160;Digital&#160;Output&#160;3</br>(4)&#160;Digital&#160;Output&#160;4</br>(5)&#160;Digital&#160;Output&#160;5</br>(6)&#160;Digital&#160;Output&#160;6</br>(7)&#160;Digital&#160;Output&#160;7</br>(8)&#160;Digital&#160;Output&#160;8</br>(9)&#160;Digital&#160;Output&#160;9</br>(10)&#160;Digital&#160;Output&#160;10</br>(11)&#160;Digital&#160;Output&#160;11</br>(12)&#160;Digital&#160;Output&#160;12</br>(13)&#160;Digital&#160;Output&#160;13</br>(14)&#160;Digital&#160;Output&#160;14</br>(15)&#160;Digital&#160;Output&#160;15</br>(16)&#160;Digital&#160;Output&#160;16</br>(17)&#160;Digital&#160;Output&#160;17</br>(18)&#160;Digital&#160;Output&#160;18</br>(19)&#160;Digital&#160;Output&#160;19</br>(20)&#160;Digital&#160;Output&#160;20</br>(21)&#160;Digital&#160;Output&#160;21</br>(22)&#160;Digital&#160;Output&#160;22</br>(23)&#160;Digital&#160;Output&#160;23</br>(24)&#160;Digital&#160;Output&#160;24</br>(25)&#160;Digital&#160;Output&#160;25</br>(26)&#160;Digital&#160;Output&#160;26</br>(27)&#160;Digital&#160;Output&#160;27</br>(28)&#160;Digital&#160;Output&#160;28</br>(29)&#160;Digital&#160;Output&#160;29</br>(30)&#160;Digital&#160;Output&#160;30</br>(31)&#160;Digital&#160;Output&#160;31</br>(32)&#160;Digital&#160;Output&#160;32 |
+| Alarm&#x2011;DO&#x2011;Mapping&#x2011;B | 0-59 | (0)&#160;None</br>(1)&#160;Digital&#160;Output&#160;1</br>(2)&#160;Digital&#160;Output&#160;2</br>(3)&#160;Digital&#160;Output&#160;3</br>(4)&#160;Digital&#160;Output&#160;4</br>(5)&#160;Digital&#160;Output&#160;5</br>(6)&#160;Digital&#160;Output&#160;6</br>(7)&#160;Digital&#160;Output&#160;7</br>(8)&#160;Digital&#160;Output&#160;8</br>(9)&#160;Digital&#160;Output&#160;9</br>(10)&#160;Digital&#160;Output&#160;10</br>(11)&#160;Digital&#160;Output&#160;11</br>(12)&#160;Digital&#160;Output&#160;12</br>(13)&#160;Digital&#160;Output&#160;13</br>(14)&#160;Digital&#160;Output&#160;14</br>(15)&#160;Digital&#160;Output&#160;15</br>(16)&#160;Digital&#160;Output&#160;16</br>(17)&#160;Digital&#160;Output&#160;17</br>(18)&#160;Digital&#160;Output&#160;18</br>(19)&#160;Digital&#160;Output&#160;19</br>(20)&#160;Digital&#160;Output&#160;20</br>(21)&#160;Digital&#160;Output&#160;21</br>(22)&#160;Digital&#160;Output&#160;22</br>(23)&#160;Digital&#160;Output&#160;23</br>(24)&#160;Digital&#160;Output&#160;24</br>(25)&#160;Digital&#160;Output&#160;25</br>(26)&#160;Digital&#160;Output&#160;26</br>(27)&#160;Digital&#160;Output&#160;27</br>(28)&#160;Digital&#160;Output&#160;28</br>(29)&#160;Digital&#160;Output&#160;29</br>(30)&#160;Digital&#160;Output&#160;30</br>(31)&#160;Digital&#160;Output&#160;31</br>(32)&#160;Digital&#160;Output&#160;32 |
+| Alarm&#x2011;Notes | 0-59 | str |
+| Alarm&#x2011;Name |v str |
+| Alarm&#x2011;State | 0-59 | (0)&#160;Not&#160;Active</br>(1)&#160;Active&#160;Warning</br>(2)&#160;Active&#160;Major</br>(3)&#160;Active&#160;Minor</br>(4)&#160;Reserved</br>(5)&#160;Active&#160;Critical</br>(6)&#160;Active&#160;Control |
+| Alarm&#x2011;State&#x2011;Change&#x2011;Time | 0-59 | int (datetime) |
+| Low&#x2011;Float&#x2011;Threshold | 0-59 | Float |
+| Enable&#x2011;Low&#x2011;Float&#x2011;Tracking | 0-59 | (0)&#160;Disabled</br>(1)&#160;Enabled |
+| High&#x2011;Float&#x2011;Threshold | 0-59 | Float |
+| Enable&#x2011;High&#x2011;Float&#x2011;Tracking | 0-59 | (0)&#160;Disabled</br>(1)&#160;Enabled |
+| High&#x2011;Load&#x2011;Threshold | 0-59 | Float |
+| AC&#x2011;Fail&#x2011;Recognition&#x2011;Period | 0-59 | int (TimeIntervalInSeconds) |
+| System&#x2011;Overload&#x2011;Threshold | 0-59 | int (Unsigned8) |
+| System&#x2011;Overload&#x2011;Recognition&#x2011;Period | 0-59 | int (TimeIntervalInMinutes) |
+| System&#x2011;Overload&#x2011;Type | 0-59 | (0)&#160;Total&#160;Capacity</br>(1)&#160;Redundancy |
+| Battery&#x2011;Temperature&#x2011;High&#x2011;Threshold | 0-59 | Signed8 |
+| Battery&#x2011;Temperature&#x2011;Low&#x2011;Threshold | 0-59 | Signed8 |
+| Nominal&#x2011;AC&#x2011;Voltage | 0-59 | Float |
+| AC&#x2011;Phase&#x2011;Fail&#x2011;Threshold | 0-59 | int (Unsigned8) |
+| AC&#x2011;Phase&#x2011;Voltage&#x2011;Threshold | 0-59 | int (Unsigned8) |
+| Nominal&#x2011;AC&#x2011;Frequency | 0-59 | Float |
+| AC&#x2011;Frequency&#x2011;Threshold | 0-59 | int (Unsigned8) |
 
 ## Smart Alarms
 
