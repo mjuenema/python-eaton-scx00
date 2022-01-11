@@ -11,7 +11,7 @@ No error checking is done and all XMLRPC errors are passed on to the caller.
 
 **Status**: Works for me ;-)
 
-Big thanks to 'The-Godfather' for having figured out how to make xmlrpc calls with cookies and 'GermainZ' for having asked the question on Stackoverflow. The (Safe)CookieTransport implementations below are based on their code.
+Big thanks to 'The-Godfather' for having figured out how to make xmlrpc calls with cookies and 'GermainZ' for having asked the question on Stackoverflow.
 
 The ``SCx00`` class provides dictionary style access to all data items.
 ```python
