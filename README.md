@@ -1,6 +1,8 @@
 # python-eaton-scx00
 
-**I am goingto add the code soon**
+**I am goingto add the code soon.**
+
+## Overview
 
 SCX00.py is a module for reading and writing data from/to Eaton Power SC200 and SC300 Controllers.
 I don't know whether it also works with the SC100 model as I don't have access to one.
@@ -9,9 +11,19 @@ The module implements a simple wrapper for the Eaton SCx00 XMLRPC interface.
 
 No error checking is done and all XMLRPC errors are passed on to the caller.
 
-**Status**: Works for me ;-)
+## Status 
+
+Works for me ;-)
+
+## Thanks
 
 Big thanks to 'The-Godfather' for having figured out how to make xmlrpc calls with cookies and 'GermainZ' for having asked the question on Stackoverflow.
+
+## References
+
+* See ``links.md`` for a list of data items.
+
+## The SCx00 class
 
 The ``SCx00`` class provides dictionary style access to all data items.
 ```python
@@ -40,6 +52,8 @@ Instances provides dictionary-style access to the data items of the controller.
 'Site-2'
 ```
 
+## Authentication
+
 Write access probbaly requires to authenticate first. Either provide username and password as keywork arguments when creating an instance or call the ``.login()`` method.
 
 ```python
@@ -48,6 +62,8 @@ Write access probbaly requires to authenticate first. Either provide username an
 >>> client['Site-Name']
 Site-1
 ```
+
+## Type conversion
 
 Returned values may have to be cast into their appropriate type.
 
@@ -89,6 +105,8 @@ Date/time values are easy to convert, too.
 >>> datetime.datetime.fromtimestamp(client['Next-Battery-Test-Start-Time'])
 datetime.datetime(2038, 1, 19, 14, 14, 7)
 ```
+
+## Tabular data
 
 Tabular data can be accessed through a special slicing notation.
 
