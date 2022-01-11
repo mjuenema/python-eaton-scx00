@@ -1,5 +1,7 @@
 # python-eaton-scx00
 
+**I am goingto add the code soon**
+
 SCX00.py is a module for reading and writing data from/to Eaton Power SC200 and SC300 Controllers.
 I don't know whether it also works with the SC100 model as I don't have access to one.
 
@@ -88,7 +90,7 @@ Date/time values are easy to convert, too.
 datetime.datetime(2038, 1, 19, 14, 14, 7)
 ```
 
-Tabular can be accessed through a special slicing notation.
+Tabular data can be accessed through a special slicing notation.
 
 ```python
 >>> client['DI-Name:1-8']
