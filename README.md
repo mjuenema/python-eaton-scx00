@@ -1,7 +1,5 @@
 # python-eaton-scx00
 
-**I am goingto add the code soon.**
-
 ## Overview
 
 SCX00.py is a module for reading and writing data from/to Eaton Power SC200 and SC300 Controllers.
