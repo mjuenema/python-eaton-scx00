@@ -1,3 +1,5 @@
+Items are valid for SC200. SC300 is mostly untested.
+
 ## Communications
 
 
