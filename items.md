@@ -7,12 +7,12 @@
 ## Ethernet
 
 
-| Item | Type |
-| ---- | ---- |
-| IP&#x2011;Address | int (IPAddress) |
-| Subnet&#x2011;Mask | int (IPAddress) |
-| Gateway&#x2011;Address | int (IPAddress) |
-| Host&#x2011;Name | str |
+| Item | Type | SC200 | SC300 |
+| ---- | ---- | ----- | ----- |
+| IP&#x2011;Address | int (IPAddress) | yes | yes |
+| Subnet&#x2011;Mask | int (IPAddress) | yes | yes |
+| Gateway&#x2011;Address | int (IPAddress) | yes | yes |
+| Host&#x2011;Name | str | yes | yes |
 
 ## Front Panel
 
