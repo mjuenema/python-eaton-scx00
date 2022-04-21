@@ -122,27 +122,27 @@ Items are valid for SC200. SC300 is mostly untested.
 ### Web User Table
 
 
-| Item | Index | Type |
-| ---- | ----- | ---- |
-| User&#x2011;Active | 1-10 | bool |
-| User&#x2011;Name | 1-10 | str |
-| User&#x2011;Logon&#x2011;ID | 1-10 | str |
-| User&#x2011;Logon&#x2011;Password | 1-10 | str |
-| User&#x2011;Read | 1-10 | bool |
-| User&#x2011;Write | 1-10 | bool |
-| User&#x2011;Restore | 1-10 | bool |
-| User&#x2011;Backup | 1-10 | bool |
-| User&#x2011;Execute | 1-10 | bool |
-| User&#x2011;Upgrade&#x2011;Firmware | 1-10 | bool |
-| User&#x2011;Edit&#x2011;User&#x2011;List | 1-10 | bool |
-| Current&#x2011;User&#x2011;Name | 1-10 | str |
-| Current&#x2011;User&#x2011;Read | 1-10 | bool |
-| Current&#x2011;User&#x2011;Write | 1-10 | bool |
-| Current&#x2011;User&#x2011;Restore | 1-10 | bool |
-| Current&#x2011;User&#x2011;Backup | 1-10 | bool |
-| Current&#x2011;User&#x2011;Execute&#x2011;Commands | 1-10 | bool |
-| Current&#x2011;User&#x2011;Upgrade&#x2011;Firmware | 1-10 | bool |
-| Current&#x2011;User&#x2011;Edit&#x2011;User&#x2011;List | 1-10 | bool |
+| Item | Index | Type | SC200 | SC300 |
+| ---- | ----- | ---- | ----- | ----- |
+| User&#x2011;Active | 1-10 | bool | Yes | Yes |
+| User&#x2011;Name | 1-10 | str | Yes | Yes |
+| User&#x2011;Logon&#x2011;ID | 1-10 | str | Yes | Yes |
+| User&#x2011;Logon&#x2011;Password | 1-10 | str | Yes | Yes |
+| User&#x2011;Read | 1-10 | bool | Yes | No |
+| User&#x2011;Write | 1-10 | bool | Yes | ? |
+| User&#x2011;Restore | 1-10 | bool | Yes | ? |
+| User&#x2011;Backup | 1-10 | bool | Yes | ? |
+| User&#x2011;Execute | 1-10 | bool | Yes | ? |
+| User&#x2011;Upgrade&#x2011;Firmware | 1-10 | bool | Yes | ? |
+| User&#x2011;Edit&#x2011;User&#x2011;List | 1-10 | bool | Yes | ? |
+| Current&#x2011;User&#x2011;Name | 1-10 | str | Yes | ? |
+| Current&#x2011;User&#x2011;Read | 1-10 | bool | Yes | ? |
+| Current&#x2011;User&#x2011;Write | 1-10 | bool | Yes | ? |
+| Current&#x2011;User&#x2011;Restore | 1-10 | bool | Yes | ? |
+| Current&#x2011;User&#x2011;Backup | 1-10 | bool | Yes | ? |
+| Current&#x2011;User&#x2011;Execute&#x2011;Commands | 1-10 | bool | Yes | ? |
+| Current&#x2011;User&#x2011;Upgrade&#x2011;Firmware | 1-10 | bool | Yes | ? |
+| Current&#x2011;User&#x2011;Edit&#x2011;User&#x2011;List | 1-10 | bool | Yes | ? |
 
 ## SNMP
 
